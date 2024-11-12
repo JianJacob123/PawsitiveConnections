@@ -1,0 +1,277 @@
+
+/* Wrapper styling */
+.wrapper {
+    width: 85%; /* Make it responsive */
+    max-width: 420px; /* Increased max-width for larger screens */
+    background: rgb(255, 255, 255); /* White for clarity */
+    border: 2px solid rgba(0, 0, 0, 0.2); /* Light greenish border */
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(30px);
+    color: #333;
+    border-radius: 30px;
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+    transition: height 0.2s ease;
+    margin-bottom: 200px;
+    margin: 20px auto; /* Added margin for smaller screens */
+    
+}
+
+/* Custom alert container */
+.alert {
+    position: fixed;
+    top: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    padding: 10px 20px;
+    background-color: #f44336; /* Red for error alerts */
+    color: white;
+    border-radius: 5px;
+    z-index: 9999;
+    opacity: 0.9;
+    font-size: 16px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 300px;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+/* Custom success alert */
+.alert-success {
+    background-color: #4CAF50; /* Green for success alerts */
+}
+
+/* Alert close button */
+.alert .close-btn {
+    margin-left: 10px;
+    font-size: 20px;
+    cursor: pointer;
+    color: white;
+}
+
+/* Optional animation for fading out the alert */
+@keyframes fadeOut {
+    0% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+        transform: translateX(-50%) translateY(-20px);
+    }
+}
+
+.alert.fade-out {
+    animation: fadeOut 1s forwards;
+}
+
+
+
+
+.captcha {
+    display: flex;
+    justify-content: center; 
+    align-items: center; 
+    transform: scale(0.8);
+    transform-origin: 0 0;
+    margin: 20px 20px 0 75px; 
+}
+    
+.captcha .g-recaptcha {
+        width: 250px; /* Set a specific width */
+        height: 50px; /* Set a specific height */
+}
+    
+
+/* Active state for wrapper */
+.wrapper.active {
+    height: 750px; /* Adjust height for the active state */
+}
+
+/* Form box styling */
+.wrapper .form-box {
+    width: 100%;
+    padding: 40px;
+    transition: transform 0.18s ease; /* Smooth transition */
+}
+
+/* Login form box */
+.wrapper .form-box.login {
+    transform: translateX(0);
+}
+
+/* Active state for login form box */
+.wrapper.active .form-box.login {
+    transform: translateX(-400px);
+}
+
+/* Register form box */
+.wrapper .form-box.register {
+    position: absolute;
+    transform: translateX(390px);
+}
+
+/* Active state for register form box */
+.wrapper.active .form-box.register {
+    transform: translateX(0);
+}
+
+/* Headings */
+.wrapper h1 {
+    font-size: 38px;
+    text-align: center;
+    color: #4CAF50; /* Green for nature and care */
+}
+
+/* Underline for headings */
+.wrapper .underline {
+    width: 80px;
+    height: 6px;
+    background: #FFC107; /* Soft golden yellow for warmth */
+    border-radius: 9px;
+    margin: 0 auto;
+}
+
+/* Input box styling */
+.wrapper .input-box {
+    position: relative;
+    width: 100%;
+    height: 50px;
+    margin-top: 30px;
+}
+
+/* Error message styling */
+.wrapper .error-message {
+    color: #ff5722; /* Error in a warm red */
+    text-align: center;
+    font-size: 12px;
+}
+
+
+
+/* Input field styling */
+.input-box input {
+    width: 100%;
+    height: 100%;
+    background: #fff; /* White for clarity */
+    outline: none;
+    border: 2px solid #cfd8dc; /* Light grey border */
+    border-radius: 30px;
+    padding: 20px 45px 20px 20px;
+    transition: border 0.3s;
+}
+
+/* Placeholder color */
+.input-box input::placeholder {
+    color: #999; /* Soft placeholder color */
+}
+
+/* Icon styling */
+.input-box .icon {
+    position: absolute;
+    right: 20px;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 16px;
+    color: #4CAF50; /* Green icons */
+}
+
+/* Remember me and forgot password styling */
+.wrapper .remember-forgot {
+    display: flex;
+    justify-content: flex-end;
+    font-size: 14px;
+    margin-top: 20px;
+    margin-left: 10px;
+}
+
+.wrapper a {
+    font-weight: 600;
+}
+
+/* Checkbox styling */
+.remember-forgot label input {
+    accent-color: #4CAF50; /* Green accent for checkboxes */
+    margin-right: 4px;
+}
+
+/* Link styling */
+.remember-forgot a {
+    color: #2196F3; /* Blue for links */
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.remember-forgot a:hover {
+    text-decoration: underline;
+}
+
+/* Button styling */
+.wrapper #login {
+    width: 100%;
+    height: 45px;
+    background-color: #4CAF50; /* Green for nature theme */
+    color: white; /* White text for contrast */
+    border: none;
+    outline: none;
+    border-radius: 30px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: 700;
+    margin-top: 20px;
+    transition: background 0.3s;
+}
+
+.wrapper #login:hover {
+    background-color: #388E3C; /* Darker green on hover */
+}
+
+/* Signup button styling */
+.wrapper #register {
+    width: 100%;
+    height: 45px;
+    background-color: #FFC107; /* Warm yellow for sign-up */
+    color: white; /* White text */
+    border: none;
+    outline: none;
+    border-radius: 30px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: 700;
+    margin-top: 20px;
+    transition: background 0.3s;
+}
+
+.wrapper #register:hover {
+    background-color: #FFB300; /* Slightly darker yellow on hover */
+}
+
+/* Register link styling */
+form .register {
+    text-align: center;
+    font-size: 15px;
+    margin: 20px 0 15px;
+}
+
+.register p a {
+    color: #4CAF50; /* Consistent green for links */
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.register p a:hover {
+    text-decoration: underline;
+}
+
+/* Media Queries for Responsiveness */
+@media (min-width: 460px) {
+    .wrapper {
+        margin: 40px auto; /* More margin for larger screens */
+        /* You can also adjust height if needed */
+        height: auto; /* Or any specific height */
+    }
+}

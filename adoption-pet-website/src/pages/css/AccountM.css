@@ -1,0 +1,82 @@
+.AccM-Container{
+    display: flex;
+    background-color: rgb(32, 26, 26); /*Body Color */
+    min-height: 100vh;
+    height: 100bh;
+}
+
+
+.AccM-Table{
+    padding-top: 20px;
+    background-color: white;
+    height: 90%;
+    border-radius: 10px;
+}
+
+.main-content h1 {
+    color: white;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.main-content {
+    margin-left: 290px; 
+
+}
+
+.table-title{
+    text-align: center;
+    color: goldenrod;
+    text-transform: uppercase;
+}
+
+table {
+    margin-top: 20px;
+    width: 80%; 
+    border-collapse: collapse; 
+    margin-left: 10%;
+}
+
+/* Style the table headers */
+th {
+    background-color: #4CAF50; 
+    color: white; 
+    padding: 10px;
+    text-align: left; 
+}
+
+
+td {
+    padding: 10px; 
+    border: 1px solid goldenrod; 
+}
+
+/* Alternate row colors for better readability */
+tbody tr:nth-child(even) {
+    background-color: #f2f2f2; /* Light gray for even rows */
+}
+
+
+.search-input{
+    font-family: Pixelify Sans;
+    font-size: 16px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+.btn-delete{
+    padding: 10px;
+    background-color: tomato;
+    border-radius: 10px;
+    text-align: center;
+}
+
+/* Responsive design */
+@media (max-width: 600px) {
+    table {
+        font-size: 14px; 
+    }
+}
+

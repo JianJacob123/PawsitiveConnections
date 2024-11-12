@@ -1,0 +1,74 @@
+/* CSS (userprofile.css) */
+
+.profile-container {
+    background-color: wheat;
+    padding: 120px;
+    height: 100vh;
+}
+
+.P-info {
+    background-color: gray;
+    border: 1px solid black;
+    border-radius: 5px;
+    padding: 10px; /* Added padding for spacing */
+}
+
+.top {
+    background-color: rgb(89, 205, 101);
+    display: flex;
+    align-items: center;
+    justify-content: start; /* Align items to the start */
+    border: 1px solid black;
+    border-radius: 5px;
+    padding: 10px; /* Added padding for spacing */
+    gap: 10px; /* Space between items */
+}
+
+.profile-icon {
+    font-size: 100px;
+    margin-right: 10px;
+}
+
+.bottom {
+    background-color: white;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column; 
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    margin-top: 20px;
+}
+
+.bottom h2{
+    margin-bottom: 2%;
+}
+
+.info-line {
+    margin: 0; /* Remove default margin for alignment */
+}
+
+.info-line-name{
+    margin: 0;
+    font-size: 2em;
+}
+
+
+.table-container {
+    background-color: rgb(181, 243, 175);
+    padding: 20px;
+    border-radius: 10px;
+    border: 1px solid black;
+    width: 100%;
+    display: flex;
+    justify-content: center; /* Centers the table in the container */
+}
+
+.table {
+    background-color: rgba(25, 185, 60, 0.637);
+    width: 90%; /* Adjust the width to make the table smaller */
+    max-width: 700px; /* Set a max-width to prevent it from growing too large (lumalagpas kasi sa table containerr) */
+    table-layout: auto; /* Ensures columns adjust based on content */
+    border-collapse: collapse;
+    margin-right: 6%;
+}

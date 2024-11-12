@@ -1,0 +1,144 @@
+/* Existing styles */
+* {
+    margin: 0;
+    padding: 0;
+    outline: none;
+    border: none;
+    text-decoration: none;
+    box-sizing: border-box;
+}
+
+
+
+
+nav {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    background: #4CAF50;
+    width: 290px;
+    height: 100vh;
+    overflow-y: auto;
+    box-shadow: 0 20px 35px rgba(0, 0, 0, 0.1);
+    z-index: 1000;
+}
+
+
+.Title {
+    text-align: center;
+    padding: 20px;
+    color:#FFC107;
+}
+
+.adminSbar-wrapper {
+    display: flex;
+}
+
+.adminSbar-wrapper .adminSbar-container {
+    display: flex;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 20px;
+}
+
+nav li{
+    list-style-type: none;
+    margin-bottom: 30px;
+    margin-top: 20px;
+    padding: 0;
+    text-align: center;
+}
+nav a {
+    position: relative;
+    color: white;
+    font-family: Pixelify Sans;
+    font-size: 20px;
+    display: flex;
+    align-items: center;
+    width: 100%;
+    padding: 10px;
+}
+
+nav a:hover {
+    font-size: 21px;
+    background-color: white;
+    border-radius: 15px;
+    position: relative;
+    color: black;
+    transition: ease-in-out 0.3s;
+}
+
+
+nav a:active {
+    background-color: cadetblue;
+}
+
+.nav-item {
+    margin-left: 10px;
+}
+
+
+.info-container {
+
+    padding: 15px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    text-align: center;
+    background-color: #f9f9f9; 
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1); 
+    transition: box-shadow 0.3s ease; 
+    max-width: 80%; 
+    margin: 10px  20px 0 20px ;  
+}
+
+.info-container:hover {
+    font-size: 15px;
+    box-shadow: 0 4px 12px rgb(255, 255, 255); 
+    transition: ease-in-out 0.2s;
+}
+
+
+.info-name {
+    display: flex;
+    flex-direction: column; 
+    align-items: center; 
+    gap: 8px; 
+}
+
+.info-container .info-name p {
+    font-size: 16px;
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+}
+
+/* Responsive Side bar adjustment */
+@media (max-width: 474px) {
+    nav {
+        width: 100px; /* Full width for smaller screens */
+    }
+
+    .Title {
+        display: none;
+    }
+
+    .nav-item{
+        display: none;
+    }
+}
+
+@media (max-width: 768px) {
+    nav {
+        width: 100px; /* Full width for smaller screens */
+    }
+
+    .Title {
+        display: none;
+    }
+
+    .nav-item{
+        display: none;
+    }
+}

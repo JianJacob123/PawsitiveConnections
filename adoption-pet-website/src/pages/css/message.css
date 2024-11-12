@@ -1,0 +1,108 @@
+.messageContainer {
+    background-color: #f0f0f0; /* Slightly softer gray for a cleaner look */
+    height: 120vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding-top: 100px;
+}
+
+.messageList p {
+    text-align: center; /* Center text horizontally */
+    width: 100%; /* Make sure it takes the full width of the container */
+}
+
+.message {
+    background-color: white;
+    width: 90%;
+    max-width: 600px;
+    height: 500px;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    overflow-y: auto; /* Allows scrolling for long message lists */
+}
+
+h2 {
+    color: #333;
+    font-weight: 500;
+}
+
+h4 {
+    color: #666;
+    margin-bottom: 10px;
+}
+
+.messageList {
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    gap: 8px;
+}
+
+.sentMessage {
+    align-self: flex-end;  /* This puts your messages on the right */
+    background-color: #0084ff;
+    color: white;
+    padding: 8px 16px;
+    border-radius: 18px;
+    margin: 2px 0;
+    max-width: 80%;
+}
+
+.receivedMessage {
+    align-self: flex-start;  /* This puts received messages on the left */
+    background-color: #e4e6eb;
+    color: black;
+    padding: 8px 16px;
+    border-radius: 18px;
+    margin: 2px 0;
+    max-width: 80%;
+}
+
+.input-mssg {
+    display: flex;
+    align-items: center;
+    width: 100%;
+}
+
+.input-mssg input {
+    border: 1px solid #ccc;
+    border-right: none; /* Removes the right border to join with button */
+    border-radius: 0; /* Removes all border radius */
+    width: 100%; /* Full width to accommodate space */
+    height: 40px;
+    padding: 10px;
+    font-size: 16px;
+    outline: none;
+    transition: border-color 0.3s ease;
+}
+
+.input-mssg input:focus {
+    border-color: #007bff; /* Focus color change */
+}
+
+.message button {
+    font-size: 16px;
+    padding: 0 20px;
+    background-color: #28a745;
+    color: white;
+    border: 1px solid #ccc;
+    border-left: none; /* Removes the left border to join with input */
+    border-radius: 0; /* Removes all border radius */
+    height: 40px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.message button:hover {
+    background-color: #218838; /* Darker green on hover */
+}
+
+.message button:focus {
+    outline: none; /* Remove focus outline */
+}

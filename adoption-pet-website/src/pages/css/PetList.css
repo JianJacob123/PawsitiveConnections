@@ -1,0 +1,104 @@
+.Petlist-container{
+    background-color: rgb(32, 26, 26);/*Body Color */
+    min-height: 100vh;
+    height: auto;
+    flex-wrap: wrap;
+}
+
+
+.PetList-main-container{
+    flex-grow: 1;
+    padding: 20px;
+    margin-left: 290px;
+}
+
+.PetList-main-container h1{
+    color: white;
+    text-align: center;
+    text-transform: uppercase;
+
+}
+
+
+
+.pl-card-container{
+    display: flex;
+    background-color: #fdfdfd;
+    border-radius: 10px;
+    margin-top:30px;
+    height: auto;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+.petli-card{
+    background-color: rgb(40, 178, 6);
+    border-radius: 6px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    width: 450px;
+}
+
+.Pl-title{
+    margin-bottom: 0px;
+    font-family: Pixelify Sans;
+    font-size: 20px;
+}
+
+.petli-card h4{
+    color: #FFFDD0;
+    text-align: center;
+    font-family: Pixelify Sans;
+    font-size: 15px;
+    text-transform: uppercase;
+    padding: 20px 10px 20px 20px;
+    margin-bottom: 0px;
+}
+
+.petli-card p{
+    text-align: center;
+    color: white;
+}
+
+.petli-card h3{
+    text-align: center;
+    font: 24px;
+    color: white;
+}
+
+.pl-pet-img{
+    display: block;
+    margin: 0 auto;
+    width: 150px; 
+    height: 160px;
+    border-radius: 100px;
+}
+
+.pl-card-btn{
+    text-align: center;
+    justify-content: center;
+    padding-bottom: 20px;
+    margin-top: 3%;
+}
+
+.pl-card-btn button{
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 10px;
+}
+
+.pl-card-btn button:hover{
+    background-color: #45a049;
+    box-shadow: #ebe1e1;
+    color: black;
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: 0 2px 8px rgba(238, 238, 238, 0.829); 
+    transition: box-shadow 0.3s ease; 
+}

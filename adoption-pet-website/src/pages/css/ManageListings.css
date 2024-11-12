@@ -1,0 +1,137 @@
+.manage-list-wrapper{
+    margin-top: 8%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.manage-list-wrapper h2{
+    font-size: 50px;
+    margin-bottom: 3%;
+}
+
+.manage-list-container{
+    width: 80%;
+    padding: 20px;
+    margin: auto;
+    display: flex;
+    gap: 30px;
+}
+
+.manage-list-card{
+    border: 3px solid black;
+    border-radius: 10px;
+    width: 23%;
+    background-color: white;
+
+}
+
+.manage-list-card img{
+    width: 100%;
+    border-radius: 8px 8px 0px 0px;
+}
+
+.manage-list-card h3{
+    font-size: 30px;
+    padding: 10px;
+}
+
+.manage-list-card p{
+    margin-left: 5%;
+    margin-bottom: 1%;
+}
+
+.manage-list-button{
+    padding: 10px;
+    margin-top: 7%;
+    margin-left: 22%;
+    margin-bottom: 5%;
+    width: 50%;
+    border-radius: 10px;
+    background-color: rgb(89, 205, 101);
+    color: white;
+    cursor: pointer;
+}
+
+.manage-list-button:hover{
+    background-color: rgb(254, 123, 123);
+    transition: 1s;
+}
+
+/*Modal*/
+
+.modal{
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+}
+
+.modal-content h3{
+    margin-top: 10%;
+}
+
+.modal-content input{
+    border: 2px solid black;
+    margin-top: 5%;
+    padding: 10px;
+}
+
+.modal-content button{
+    background-color: rgb(89, 205, 101);
+    padding: 10px;
+    margin-left: 3%;
+    border-radius: 50px;
+    color: white;
+}
+
+.modal-content button:hover{
+    background-color: rgb(254, 123, 123);
+}
+
+.modal-content{
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    width: 300px;
+    text-align: center;
+    position: relative;
+}
+
+.close{
+    position: absolute;
+    top: 10px;
+    right: 15px;
+    cursor: pointer;
+    font-size: 24px;
+}
+
+.modal-users{
+    display: flex;
+    align-items: center;  /* Vertically center-align the items */
+    border: 1px solid black;
+    margin-top: 5%;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+.modal-users h5{
+    font-size: 16px;
+}
+
+.modal-users button{
+    background-color: rgb(89, 205, 101);
+    padding: 10px;
+    color: white;
+    margin-left: auto; /* Pushes the button to the far right */
+}
+
+.modal-users button:hover{
+    background-color: rgb(254, 123, 123);
+}

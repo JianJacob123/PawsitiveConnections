@@ -1,0 +1,83 @@
+body{
+    background-color: rgb(208, 222, 216);
+}
+
+.petlist-wrapper{
+    margin-top: 10%;
+    display: flex;
+    height: 70vh;
+    padding: 40px;
+}
+
+.pet-select{
+    border: 2px solid black;
+    padding: 10px;
+    font-size: 1em;
+}
+
+.pet-filter{
+    width: 50%;
+}
+
+.pet-cards-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* Create a maximum of 2 columns */
+    gap: 20px; /* Space between cards */
+    max-height: 400px;
+    padding: 20px;
+    overflow-y: auto; /* Enable vertical scrolling */
+    width: 60%;
+    border: 3px solid black;
+    background-color: gray;
+
+}
+
+.location-text{
+    margin-left: 5%;
+    border: 2px solid black;
+    padding: 10px;
+    font-size: 1em;
+}
+
+.pet-card {
+    border: 3px solid black;
+    border-radius: 10px;
+    background-color: white;
+    text-decoration: none;
+    transition: transform 0.3s, box-shadow 0.3s, border 0.3s;
+    display: flex; /* Use flexbox for layout */
+    flex-direction: column; /* Stack items vertically */
+    justify-content: flex-start; /* Align items at the top */
+    width: 100%; /* Use full width of the container */
+    max-width: 250px; /* Set a max-width for the card */
+    margin: 10px; /* Add some margin between cards */
+}
+
+.pet-card img {
+    width: 100%;
+    height: auto; /* Let the height adjust based on the width */
+    max-height: 150px; /* Limit image height */
+    border-radius: 8px 8px 0px 0px;
+}
+
+.pet-card h2 {
+    margin-left: 2%;
+    margin-bottom: 2%;
+    text-decoration: none;
+    color: black;
+    font-size: 1.2em; /* Adjust font size for visibility */
+}
+
+.pet-card p {
+    margin-left: 2%;
+    text-decoration: none;
+    color: black;
+    padding: 3px; /* Add some padding for spacing */
+}
+
+.pet-card:hover {
+    transform: scale(1.1);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+    transition: 1s;
+    border: 3px solid green;
+}

@@ -1,0 +1,119 @@
+body{
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+.pet-details-container {
+    margin-top: 8%;
+    display: flex;
+    justify-content: center;
+}
+
+.pet-details-card {
+    border: 2px solid black;
+    width: 100%;
+    margin: 20px;
+    padding: 20px;
+    border-radius: 10px;
+    background-color: white;
+}
+
+
+.link {
+    display: flex;
+    align-items: center;
+    text-decoration: none; 
+    color: green;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.link:hover{
+    text-decoration: underline;
+}
+
+.link h3 {
+    margin: 0; /* Remove default margin from h3 */
+}
+
+.link svg {
+    margin-right: 8px; /* Space between icon and text */
+}
+
+.pet-details-card p {
+    font-size: 1.5em;
+}
+
+.pet-details-content-wrapper {
+    display: flex;
+    align-items: flex-start; /* Align items to the top */
+    margin-top: 2%;
+}
+
+.pet-details-content {
+    flex-grow: 1; /* Allow this to grow and fill available space */
+}
+
+.pet-details-content-main{
+    flex-grow: 1;
+    font-size: 1.5em;
+    margin-left: 1%;
+}
+
+.pet-details-content-main p{
+    font-size: 1em;
+}
+.pet-profile {
+    width: 15%; /* Maintain fixed width */
+    border: 1px solid black;
+    border-radius: 50%;
+    margin-left: 1%;
+}
+
+.add-pics {
+    border: 3px solid black;
+    border-radius: 10px;
+    margin-left: 5%;
+    flex-grow: 1; /* Allow this to grow to fill space, but not affect the pet-profile width */
+    max-width: 30%; /* Set a maximum width to avoid overflow */
+}
+
+.additional-info{
+    display: flex;
+    gap: 20px;
+}
+
+.pet-details-content {
+    border: 1px solid black;
+    margin-top: 2%;
+    background-color:gainsboro;
+    padding: 20px;
+    width: 30%;
+}
+
+.pet-details-content h2{
+    margin-bottom: 2%;
+}
+
+.pet-details-content p{
+    margin-bottom: 1%;
+}
+
+.description{
+    border: 1px solid black;
+    margin-top: 2%;
+    background-color:gainsboro;
+    padding: 20px;
+    width: 50%;
+}
+
+.pet-details-button button{
+    background-color: rgb(43, 180, 43);
+    padding: 20px;
+    font-size: 1.5em;
+    border-radius: 20px;
+    margin-top: 2%;
+}
+
+.pet-details-button{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

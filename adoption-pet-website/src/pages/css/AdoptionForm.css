@@ -1,0 +1,94 @@
+.adoption-form-info{
+    border: 1px solid black;
+    margin-top: 10%;
+    width: 90%;
+    border-radius: 10px;
+    background-color: white;
+}
+
+.adoption-form-info h2{
+    text-align: center;
+    margin-top: 2%;
+
+}
+
+.btn-submit{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px;
+}
+
+.adoption-form-adoptinfo textarea{
+    border: 2px solid green;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+.adoption-form-info button{
+    padding: 10px;
+    width: 100%;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    background-color: green;
+    color: white;
+}
+
+.form-wrapper{
+    display: flex;
+    justify-content: center;
+}
+
+.adoption-form-personalinfo{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding: 20px;
+}
+
+.adoption-form-personalinfo input{
+    padding: 10px;
+    width: 100%;
+    font-size: 14px;
+    border: 2px solid green;
+    border-radius: 5px;
+}
+
+.personal-info-input{
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+}
+
+.adoption-form-adoptinfo{
+    display: flex;
+    flex-direction: row;
+    padding: 20px;
+    gap: 90px;
+}
+
+.adoption-info-input{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+
+.adoption-info-radio {
+    display: flex;
+    gap: 20px;
+    align-items: center; /* Center items vertically */
+}
+
+.adoption-info-radio label {
+    display: flex; /* Keep as flex for better alignment */
+    align-items: center; /* Center label content */
+    gap: 5px; /* Space between radio button and label text */
+}
+
+.adoption-info-radio input[type="radio"] {
+    margin-top: 4px;
+    accent-color: green;
+}
+
+.motivation{
+    width: 50%;
+    margin-left: 2%;
+}

@@ -1,0 +1,53 @@
+.app-detail-container{
+    background-color: white;
+    border-radius: 10px;
+    font-size: 24px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* 2 columns */
+    gap: 15px; /* Adjust space between items */
+    margin-top: 20px;
+}
+.appdetails-main-content{
+    flex-grow: 1;
+    padding: 20px;
+    margin-left: 290px; 
+}
+
+.appdetails-main-content h1{
+    text-align: center;
+    color: white;
+}
+
+.app-detail-container h2{
+    font-size: 50px;
+}
+
+.adopter-info{
+    margin-top: 10%;;
+    width: 70%;
+    margin-left: 20%;
+}
+
+.app-btn{
+    width: 50%;
+    margin-left: 20%;
+    margin-top: 20%;
+    margin-bottom: 3%;
+    padding: 10px;
+    background-color: green;
+    border-radius: 20px;
+}
+
+.title-status{
+    display: flex;
+    text-align: center;
+    padding: 2px;
+}
+
+.status{
+    margin-left: 5px;
+    background-color:  rgb(236, 127, 127);
+    width: 100px;
+    padding: 3px;
+    border-radius: 15px;
+}
